@@ -23,13 +23,16 @@ Home automation not only refers to reduce human efforts but also energy efficien
 Components Required
 ESP8266
 470Ω Resistor
-LED
+Bulb
 Breadboard
 USB Cable
 Connecting Wires
 Android Phone with Blynk App
+<b>https://play.google.com/store/apps/details?id=cc.blynk</b>
 Hardware
-Circuit Diagram
+<b>Circuit Diagram</b>
+
+<img src="https://github.com/sushant1911/Home-Automation-Esp8266/blob/master/Digram.JPG">
 Home-Automation-using-using-ESP8266-Blynk-App-Circuit-Diagram
 
 Circuit Diagram Explanation
@@ -59,7 +62,7 @@ After the creation of Project, App will send the Auth Token code to registered E
 Click on the “+” icon which located on top right side of the app to create buttons.
 Enter the button name and select the GPIO pins (exmaple: D0, D1, D2, D3)
 Programming ESP8266 – Blynk App
-Arduino Code
+<b>Arduino Code</b>
 <pre>#define BLYNK_PRINT Serial
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
