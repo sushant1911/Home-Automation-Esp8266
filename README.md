@@ -13,13 +13,12 @@ Home Automation using ESP8266 & Blynk App – IoT
 3.3.1 Arduino Code
 3.3.2 Code Explanation
 4 Working
-5 Practical Implementation
 </pre>
 A home automation system is an automating the bulk of electronic and electrical tasks within a home. It uses a combination of hardware and software to enable control and management over appliances and devices within a home.
 
 Home automation not only refers to reduce human efforts but also energy efficiency and time saving. Here we are performing home automation by using ESP8266 – WiFi SoC and Blynk Playstore App.
 <pre>
-Components Required
+1.Components Required
 ESP8266
 470Ω Resistor
 Bulb
@@ -28,13 +27,13 @@ USB Cable
 Connecting Wires
 Android Phone with Blynk App
 <b>https://play.google.com/store/apps/details?id=cc.blynk</b>
-Hardware
-<b>Circuit Diagram</b>
+2.Hardware
+2.1<b>Circuit Diagram</b>
 
 <img src="https://github.com/sushant1911/Home-Automation-Esp8266/blob/master/Digram.JPG">
 Home-Automation-using-using-ESP8266-Blynk-App-Circuit-Diagram
 
-Circuit Diagram Explanation
+2.2 Circuit Diagram Explanation
 NodeMCU to 4- Channel Relay Board
 </pre>
 <pre>
@@ -44,8 +43,8 @@ Connect D2 pin of NodeMCU to D3 pin of 4- Channel Relay board.
 Connect D3 pin of NodeMCU to D4 pin of 4- Channel Relay board.
 Connect 3.3V of NodeMCU to Vcc pin of 4- Channel Relay board.
 Connect GND pin of NodeMCU to GNDpin of 4- Channel Relay board.
-Software
-Blynk Library Installation
+3.Software
+3.1 Blynk Library Installation
 Download the zip file for Blynk Library : Blynk_Release_v0.4.8
 </pre>
 Extract the downloaded zip file in a folder.
@@ -53,7 +52,7 @@ Open up Arduino IDE, go to: File -> Preferences and under the Settings tab, copy
 Now open the file explorer and go to the copied path location. This is the path where all the libraries are installed. So, we have to copy all the newly downloaded Blynk libraries into this folder.
 Copy the files/folders from the Libraries folder of the downloaded Blynk directory, and paste it to the Libraries folder of your Arduino IDE’s directory (The path which we copied in step 3).
 Similarly, copy the files/folder from the Tools folder of the downloaded Blynk directory, and paste it to the Tools folder of your Arduino IDE’s directory.
-Installation and Configuration of Blynk App
+3.2 Installation and Configuration of Blynk App
 Firstly install “Blynk” application from play-store and open it.
 Create an account by using Email account or Facebook account.
 Click on New Project, enter the Project Name (enter the Project Name according to your wish) as “Home Automation“, Choose Device as “NodeMCU“, Connection Type as “Wi-Fi” and then click “Create” icon.
@@ -61,7 +60,7 @@ After the creation of Project, App will send the Auth Token code to registered E
 Click on the “+” icon which located on top right side of the app to create buttons.
 Enter the button name and select the GPIO pins (exmaple: D0, D1, D2, D3)
 Programming ESP8266 – Blynk App
-<b>Arduino Code</b>
+<b>3.3 Arduino Code</b>
 <pre>#define BLYNK_PRINT Serial
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
@@ -120,7 +119,8 @@ void loop()
 {
   Blynk.run();
 }
-Working
+<br/>
+4.Working
 The home automation circuit is built around ESP8266, Blynk Android App, and a 4-channel relay board. The hardware set up should be according to the circuit diagram. AC mains appliances(Bulbs) will be connected to relays which are controlled by the ESP8266.
 
 User has to install and configure the Blynk App as per the above instructions.
