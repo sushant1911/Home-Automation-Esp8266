@@ -14,7 +14,6 @@ Home Automation using ESP8266 & Blynk App – IoT
 3.3.2 Code Explanation
 4 Working
 5 Practical Implementation
-6 Video
 </pre>
 A home automation system is an automating the bulk of electronic and electrical tasks within a home. It uses a combination of hardware and software to enable control and management over appliances and devices within a home.
 
@@ -127,4 +126,4 @@ The home automation circuit is built around ESP8266, Blynk Android App, and a 4-
 User has to install and configure the Blynk App as per the above instructions.
 
 Whenever the user presses a icon in the app, then that information will be send to ESP8266 via WiFi. The ESP8266 analyses the received commands and turns ON/OFF of the respective device via 4 – channel Relay board.
-</pre>
+
